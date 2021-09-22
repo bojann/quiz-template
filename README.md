@@ -33,3 +33,11 @@ Starts an application in dev mode
 
 Opens Storybook in a new tab<br>
 More about Storybook, check out the [Storybook documentation](https://storybook.js.org/).
+
+### `yarn test`
+
+App is using react-testing-library which is usefull for unit tests, but also it can be used for integration tests. https://testing-library.com/docs/react-testing-library/intro/
+
+### `yarn coverage`
+
+To check test coverage of whole app
