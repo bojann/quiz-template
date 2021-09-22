@@ -32,6 +32,7 @@ Starts an application in dev mode
 ### `yarn storybook`
 
 Opens Storybook in a new tab<br>
+It was decided to use `.mdx` format for addint stories because it offers more for playing and adding.
 More about Storybook, check out the [Storybook documentation](https://storybook.js.org/).
 
 ### `yarn test`
