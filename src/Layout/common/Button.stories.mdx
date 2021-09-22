@@ -1,0 +1,61 @@
+import { Meta, Story, Canvas, Props } from '@storybook/addon-docs/blocks'
+import { action } from '@storybook/addon-actions'
+import Button from './Button'
+
+export const argTypes = {
+  size: {
+    control: {
+      type: 'select',
+      options: ['small', 'medium'],
+    },
+    defaultValue: 'default',
+  },
+  children: {
+    control: 'text',
+    name: 'children',
+    defaultValue: 'Click me',
+  },
+}
+
+export const disabledArgTypes = {
+  className: {
+    control: {
+      disable: true,
+    },
+  },
+  testid: {
+    control: {
+      disable: true,
+    },
+  },
+}
+
+<Meta
+  title="Common/Button"
+  component={Button}
+  parameteres={{
+    layout: 'centered',
+    controls: { expanded: true },
+  }}
+  argTypes={{ ...argTypes, ...disabledArgTypes }}
+/>
+
+# Button
+
+Component `Button` is a button accepting custom styles and ReacNode as a children.
+
+## Default
+
+<Canvas isColumn={true}>
+  <Story name="Default">
+    {({ ...args }) => (
+      <Button onClickButton={action('button clicked')} {...args}>
+        {args.children}
+      </Button>
+    )}
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={Button} />

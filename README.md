@@ -1,0 +1,35 @@
+# Panelist Application
+
+This application is developed based on API mock from the task description :)
+
+## Prerequisites
+
+To run this project you need:
+
+- [node](https://nodejs.org/en/) (runtime enviroment for java script)
+- [yarn](https://yarnpkg.com/) (package manager)
+
+Download recommended version [node.js](https://nodejs.org/en/) and install it on your computer.
+
+After installing `node.js`, install globally `yarn` package manager with command:
+
+```
+npm install -g yarn
+```
+
+## Installation
+
+In main repo folder run this command to install all dependencies:
+
+```
+yarn
+```
+
+### `yarn start`
+
+Starts an application in dev mode with hot-reloading (keep in mind that hot reloading does not work with .graphql files at the moment )
+
+### `yarn storybook`
+
+Opens Storybook in a new tab<br>
+More about Storybook, check out the [Storybook documentation](https://storybook.js.org/).

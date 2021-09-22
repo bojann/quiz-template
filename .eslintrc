@@ -1,0 +1,19 @@
+{
+  "extends": ["react-app", "plugin:prettier/recommended", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "no-restricted-imports": [
+      "warn",
+      {
+        "paths": [
+          {
+            "name": "styled-components",
+            "message": "Please import from styled-components/macro."
+          }
+        ],
+        "patterns": ["!styled-components/macro"]
+      }
+    ],
+    "prettier/prettier": "warn"
+  }
+}

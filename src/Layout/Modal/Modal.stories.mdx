@@ -1,0 +1,41 @@
+import { Meta, Story, Canvas, Props } from '@storybook/addon-docs/blocks'
+import { action } from '@storybook/addon-actions'
+import Modal from './'
+
+export const argTypes = {
+  children: {
+    control: 'text',
+    name: 'children',
+    defaultValue: 'Welcome to modal',
+  },
+}
+
+<Meta
+  title="Components/Modal"
+  component={Modal}
+  parameteres={{
+    layout: 'centered',
+    controls: { expanded: true },
+  }}
+  argTypes={{ ...argTypes }}
+/>
+
+# Modal
+
+Component `Modal` has a fixed width and height and Backdrop outside od the box. Children can be of type ReactNode.
+
+## Default
+
+<Canvas isColumn={true}>
+  <Story name="Default">
+    {({ ...args }) => (
+      <Modal onClickButton={action('button clicked')} {...args}>
+        {args.children}
+      </Modal>
+    )}
+  </Story>
+</Canvas>
+
+## Props
+
+<Props of={Button} />
