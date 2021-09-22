@@ -1,4 +1,4 @@
-# Panelist Application
+# Quiz Application
 
 This application is developed based on API mock from the task description :)
 
@@ -27,7 +27,7 @@ yarn
 
 ### `yarn start`
 
-Starts an application in dev mode with hot-reloading (keep in mind that hot reloading does not work with .graphql files at the moment )
+Starts an application in dev mode
 
 ### `yarn storybook`
 
